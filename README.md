@@ -1,6 +1,6 @@
 # Microservice-console
  
-#How to execute the program
+# How to execute the program
 Open two terminals.
 
 Run the consumer:
