@@ -1,5 +1,29 @@
 # Microservice-console
- 
+# Creation of Project 
+Setup
+First lets verify that you have .NET Core toolchain in PATH:
+
+dotnet --help
+should produce a help message.
+
+Now let's generate two projects, one for the publisher and one for the consumer:
+
+dotnet new console --name Send
+mv Send/Program.cs Send/Send.cs
+dotnet new console --name Receive
+mv Receive/Program.cs Receive/Receive.cs
+This will create two new directories named Send and Receive.
+
+Then we add the client dependency.
+
+cd Send
+dotnet add package RabbitMQ.Client
+dotnet restore
+cd ../Receive
+dotnet add package RabbitMQ.Client
+dotnet restore
+Now we have the .NET project set up we can write some code.
+
 # How to execute the program
 Open two terminals.
 
