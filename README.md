@@ -1,5 +1,5 @@
 # Microservice-console
-# Creation of Project 
+# Creation of Project (via Command Line)
 Setup
 First lets verify that you have .NET Core toolchain in PATH:
 
